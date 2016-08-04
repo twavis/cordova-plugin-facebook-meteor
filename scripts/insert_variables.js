@@ -29,7 +29,9 @@ module.exports = function(context) {
   console.log("APP_NAME: " + APP_NAME);
   console.log("basepath: " + process.cwd());
 
-  setVariables(process.cwd() + '/platforms/android/res/values/strings.xml');
+  // xxx todo
+  // disabling this for android for now, needs to be dynamic based on platforms in meteor project
+  // setVariables(process.cwd() + '/platforms/android/res/values/strings.xml');
   setVariables(process.cwd() + '/platforms/ios/'+ METEOR_APP_NAME +'/' + METEOR_APP_NAME + '-Info.plist');
 }
 
